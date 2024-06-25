@@ -3,7 +3,8 @@
 
 | Section | Description |
 |---------|-------------|
-| [Overview](#Overview) | Explanation of the reasons for using Kontrol and Ityfuzz, and their respective applications. |
+| [Overview](#overview) | Explanation of the reasons for using Kontrol and Ityfuzz, and their respective applications. |
+| [Summary](#Summary) | Summary of contract analysis, testing, and formal verification results. |
 | [Installation](#installation) | Setup and installation requirements. |
 | [Init](#init) | Initial setup and build commands. |
 | [Where to Find the Tests](#where-to-find-the-tests) | Locations of different test suites. |
@@ -11,6 +12,7 @@
 | [Testing Environments](#testing-environments) | Overview of testing environments: Foundry, Echidna, Halmos, Ityfuzz, Medusa, and Kontrol. |
 | [Ityfuzz Tests](#ityfuzz) | Details on Ityfuzz testing environment and usage. |
 | [Kontrol Tests](#kontrol) | Guide to using Kontrol for test execution and debugging. |
+
 
 
 
@@ -33,6 +35,17 @@ Ityfuzz can be run in various ways as we have indicated in the usage instruction
 In summary, we would like to emphasize the enormous complexity and difficulty of performing Formal Verification tests on such a large project with so many on-chain dependencies.
 
 Please contact us if you have any questions about the project, tool, or need assistance in implementing new configurations.
+
+---
+
+
+### Summary
+
+---
+
+The contracts AutoExit, AutoRange, V3Utils, InterestRateModelFV, AutoCompound, V3Oracle, and V3Vault have been analyzed. Various tests have been written to verify the integrity and security of the invariants specified in each contract.
+
+We have thoroughly analyzed and tested each of the protocol's invariants. After an in-depth analysis, we have confirmed through Formal Verification that the invariants hold true, ensuring that the protocol has a strong and secure foundation.
 
 ---
 
