@@ -3,6 +3,7 @@
 
 | Section | Description |
 |---------|-------------|
+| [Overview](#Overview) | Explanation of the reasons for using Kontrol and Ityfuzz, and their respective applications. |
 | [Installation](#installation) | Setup and installation requirements. |
 | [Init](#init) | Initial setup and build commands. |
 | [Where to Find the Tests](#where-to-find-the-tests) | Locations of different test suites. |
@@ -10,6 +11,30 @@
 | [Testing Environments](#testing-environments) | Overview of testing environments: Foundry, Echidna, Halmos, Ityfuzz, Medusa, and Kontrol. |
 | [Ityfuzz Tests](#ityfuzz) | Details on Ityfuzz testing environment and usage. |
 | [Kontrol Tests](#kontrol) | Guide to using Kontrol for test execution and debugging. |
+
+
+
+### Overview
+
+---
+
+We have chosen both Kontrol and Ityfuzz tools due to the challenges involved in conducting a comprehensive testing campaign on on-chain contracts. Setting up and implementing tests for this is not yet widely practiced, as it is still in the development phase, and there are no established guidelines for doing it correctly.
+
+Thanks to direct contact with the developers and security auditors of these tools, we have been able to resolve any issues that have arisen during the work.
+
+That said, we would like to show and explain the reasons why one tool was used in some cases and another in others.
+
+In the case of Kontrol, we set up by importing all the contract bytecode, using low-level calls to interact more directly since no formal verification tool allows on-chain execution of tests. Contracts where no tests have been conducted are due to their incompatibility with the tool.
+
+Ityfuzz was used in cases where the Kontrol tool could not reach due to its limitations. Ityfuzz is a semi-automatic tool that runs on top of tools like Echidna and Foundry, among others, capable of combining Foundry's fuzzer with formal verification (concolic execution) assisted fuzzing algorithms guided by dataflow patterns and comparisons.
+
+Ityfuzz can be run in various ways as we have indicated in the usage instructions, with direct references to examples and documentation.
+
+In summary, we would like to emphasize the enormous complexity and difficulty of performing Formal Verification tests on such a large project with so many on-chain dependencies.
+
+Please contact us if you have any questions about the project, tool, or need assistance in implementing new configurations.
+
+---
 
 
 
