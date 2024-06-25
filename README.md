@@ -67,11 +67,6 @@ To be able to use this repository, you need to have the following installed:
 ```js
 sudo forge build -force
 ```
-### You can find more information on this repository:
-- [Example implementation 1](https://github.com/ZealynxSecurity/Zealynx/blob/main/OurWork/Fuzzing-and-Formal-Verification/public-contests/Olas%20Protocol/Readme-Olas.md)
-- [Example implementation 2](https://github.com/ZealynxSecurity/BastionWallet)
-- [Example implementation 3](https://github.com/ZealynxSecurity/Portals-local/tree/main)
-- [Example implementation 4](https://github.com/ZealynxSecurity/Token_glifio/tree/main)
 
 ## Where to find the tests
 
