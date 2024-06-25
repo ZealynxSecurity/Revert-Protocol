@@ -6,6 +6,7 @@
 | [Installation](#installation) | Setup and installation requirements. |
 | [Init](#init) | Initial setup and build commands. |
 | [Where to Find the Tests](#where-to-find-the-tests) | Locations of different test suites. |
+| [Security Test List](#security-test-list) | Comprehensive list of security tests and their details. |
 | [Testing Environments](#testing-environments) | Overview of testing environments: Foundry, Echidna, Halmos, Ityfuzz, Medusa, and Kontrol. |
 | [Ityfuzz Tests](#ityfuzz) | Details on Ityfuzz testing environment and usage. |
 | [Kontrol Tests](#kontrol) | Guide to using Kontrol for test execution and debugging. |
